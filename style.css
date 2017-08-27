@@ -1,0 +1,16 @@
+/*
+Theme Name: La Pizzeria
+Theme URI:
+Author: Germán Pla
+Author URI: www.germanpla.com 
+Description: Theme a medida para el sitio web Restaurante La Pizzeria
+Version: 1.0
+License: GNU General Public license or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: restaurant, mobile first, responsive, pizza
+Text Domain: lapizzeria
+*/
+body{
+	background-color: #fff;
+	font-family: Open sans, sans-serif;
+}
