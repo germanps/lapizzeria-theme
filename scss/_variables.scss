@@ -9,6 +9,13 @@ $totemPole: #a61206;
 // /* ================================= */
 // /* ========== Media Querys ========= */
 // /* ================================= */
+
+//Mobile First
 $media-mobile: "only screen and (min-width: 480px)";
 $media-tablet: "only screen and (min-width: 768px)";
 $media-desktop: "only screen and (min-width: 992px)";
+
+//Desktop Firts
+$media-mobileDes: "only screen and (max-width: 479px)";
+$media-tabletDes: "only screen and (max-width: 767px)";
+$media-desktopDes: "only screen and (max-width: 991px)";

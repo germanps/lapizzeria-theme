@@ -153,6 +153,12 @@ body{
 }
 //Navegación Principal
 .menu-sitio{
+	display: none;
+	@media #{$media-tablet}{
+		&{
+			display: block;
+		}
+	}
 	ul{
 		display: table;
 		width: 100%;
@@ -178,6 +184,26 @@ body{
 					width: 1%;
 					text-align: center;
 				}
+			}
+		}
+	}
+}
+//Menú Responsivo
+.menu-principal{
+	a{
+		display: none;
+		@media #{$media-tabletDes}{
+			&{
+				height: 40px;
+				background-color: $totemPole;
+				width: 100%;
+				color: $white;
+				display: block;
+				text-align: center;
+				line-height: 40px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 20px;
 			}
 		}
 	}

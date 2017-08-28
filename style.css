@@ -131,6 +131,14 @@ body {
   display: none;
 }
 
+.menu-sitio {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .menu-sitio {
+    display: block;
+  }
+}
 .menu-sitio ul {
   display: table;
   width: 100%;
@@ -155,6 +163,24 @@ body {
     display: table-cell;
     width: 1%;
     text-align: center;
+  }
+}
+
+.menu-principal a {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .menu-principal a {
+    height: 40px;
+    background-color: #a61206;
+    width: 100%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
   }
 }
 

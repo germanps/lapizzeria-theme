@@ -38,14 +38,19 @@
 			</div> <!-- end informacion-encabezado -->
 		</div> <!-- end contenedor -->
 	</header>
-	<div class="contenedor navegacion">
-		<?php 
-			$args = array(
-				'theme_location'=>'header-menu', //lugar del menú
-				'container'=>'nav', //etiqueta que lo va a contener
-				'container_class'=>'menu-sitio'//clase que va a llevar el menu
-			);
+	<div class="menu-principal">
+		<div class="movil-menu">
+			<a href="#" class="movil"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
+		</div>
+		<div class="contenedor navegacion">
+			<?php 
+				$args = array(
+					'theme_location'=>'header-menu', //lugar del menú
+					'container'=>'nav', //etiqueta que lo va a contener
+					'container_class'=>'menu-sitio'//clase que va a llevar el menu
+				);
 
-			wp_nav_menu($args); //imprime el menú
-		 ?>
+				wp_nav_menu($args); //imprime el menú
+			 ?>
+		</div>
 	</div>
