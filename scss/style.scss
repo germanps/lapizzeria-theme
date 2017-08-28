@@ -1,0 +1,184 @@
+@import 'variables';
+@import 'mixins';
+
+
+/*
+Theme Name: La Pizzeria
+Theme URI:
+Author: Germán Pla
+Author URI: www.germanpla.com 
+Description: Theme a medida para el sitio web Restaurante La Pizzeria
+Version: 1.0
+License: GNU General Public license or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: restaurant, mobile first, responsive, pizza
+Text Domain: lapizzeria
+*/
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+.contenedor{
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: $white;
+	font-family: Open sans, sans-serif;
+}
+
+//Encabezado
+.encabezado-sitio{
+	border-bottom: 1px solid $silver;
+	padding-bottom: 30px;
+
+	@media #{$media-tablet} {
+		& .contenedor{
+			position: relative;
+		}
+		& .informacion-encabezado{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	
+
+	.logo{
+		text-align: center;
+
+		@media #{$media-tablet}{
+			&{
+				text-align: left;
+			}
+		}
+		@media #{$media-desktop} {
+			&{
+				text-align: center;
+			}
+		}
+
+		.logotipo{
+			width: 250px;
+		}
+	}
+
+	.informacion-encabezado{
+		@media #{$media-tablet} {
+			&{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		.direccion{
+			display: block;
+			clear: both;
+			padding-top: 10px;
+
+			p{
+				margin: 0;
+				font-size: 14px;
+				text-align: center;
+
+				@media #{$media-tablet}{
+					&{
+						text-align: right;
+					}
+				}
+			}
+		}
+		//Menu redes sociales
+		.redes-sociales{
+			.social{
+				ul{
+					list-style: none;
+					text-align: center;
+					padding: 0;
+
+					@media #{$media-tablet}{
+						&{
+							float: right;
+						}
+					}
+					li{
+						position: relative;
+						display: inline-block;
+
+						a{
+							&:before{
+								font-family: 'FontAwesome';
+								content: '';
+								display: inline-block;
+								vertical-align: top;
+								padding: 0 5px;
+								font-size: 30px;
+								color: #000;
+								-webkit-font-smoothing:antialiased;
+							}
+							&[href*="facebook.com"]::before{
+								content: '\f09a';
+							}
+							&[href*="twitter.com"]::before{
+								content: '\f099';
+							}
+							&[href*="pinterest.com"]::before{
+								content: '\f231';
+							}
+							&[href*="youtube.com"]::before{
+								content: '\f16a';
+							}
+							&[href*="instagram.com"]::before{
+								content: '\f16d';
+							}
+
+							.sr-text{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//Navegación Principal
+.menu-sitio{
+	ul{
+		display: table;
+		width: 100%;
+		li{
+			&:hover{
+				background-color: $fuelYellow;
+			}
+			&.current_page_item a{
+				border-bottom: 8px solid $totemPole;
+			}
+			a{
+				text-align: center;
+				padding: 20px 0;
+				display: block;
+				text-decoration: none;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #000;
+			}
+			@media #{$media-tablet}{
+				&{
+					display: table-cell;
+					width: 1%;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

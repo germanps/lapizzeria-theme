@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,IAAI;EACH,UAAU,ECLH,IAAI;EDMX,KAAK,ECNE,IAAI",
+"sources": ["style.scss","_variables.scss"],
+"names": [],
+"file": "style.css"
+}

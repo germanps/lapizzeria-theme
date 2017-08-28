@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /*
 Theme Name: La Pizzeria
 Theme URI:
-Author: Germán Pla
+Author: Germ├ín Pla
 Author URI: www.germanpla.com 
 Description: Theme a medida para el sitio web Restaurante La Pizzeria
 Version: 1.0
@@ -10,143 +11,151 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: restaurant, mobile first, responsive, pizza
 Text Domain: lapizzeria
 */
-html{
-	box-sizing: border-box;
-}
-*, *:before, *:after{
-	box-sizing: inherit;
-}
-.contenedor{
-	max-width: 1100px;
-	width: 100%;
-	margin: 0 auto;
-}
-ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+html {
+  box-sizing: border-box;
 }
 
-body{
-	background-color: #fff;
-	font-family: Open sans, sans-serif;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/***Encabezado***/
-.encabezado-sitio{
-	border-bottom: 1px solid #c1c1c1;
-	padding-bottom: 30px;
-}
-.logo{
-	text-align: center;
-}
-.logotipo{
-	width: 250px;
-}
-@media only screen and (min-width: 768px){
-	.logo{
-		text-align: left;
-	}
-}
-@media only screen and (min-width: 992px){
-	.logo{
-		text-align: center;
-	}
-}
-@media only screen and (min-width: 768px){
-	.encabezado-sitio .contenedor{
-		position: relative;
-	}
-	.informacion-encabezado{
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-}
-.informacion-encabezado .direccion{
-	display: block;
-	clear: both;
-	padding-top: 10px;
-}
-.informacion-encabezado .direccion p{
-	margin: 0;
-	font-size: 14px;
-	text-align: center;
-}
-@media only screen and (min-width: 768px){
-	.informacion-encabezado .direccion p{
-		text-align: right;
-	}
+.contenedor {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/****Menu redes sociales****/
-.redes-sociales .social ul{
-	list-style: none;
-	text-align: center;
-	padding: 0;
-}
-@media only screen and (min-width: 768px){
-	.redes-sociales .social ul{
-		float: right;
-	}
-}
-.redes-sociales .social ul li{
-	position: relative;
-	display: inline-block;
-}
-.redes-sociales .social ul li a[href*="facebook.com"]::before{
-	content: '\f09a';
-}
-.redes-sociales .social ul li a[href*="twitter.com"]::before{
-	content: '\f099';
-}
-.redes-sociales .social ul li a[href*="pinterest.com"]::before{
-	content: '\f231';
-}
-.redes-sociales .social ul li a[href*="youtube.com"]::before{
-	content: '\f16a';
-}
-.redes-sociales .social ul li a[href*="instagram.com"]::before{
-	content: '\f16d';
-}
-.redes-sociales .social ul li a:before{
-	font-family: 'FontAwesome';
-	content: '';
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 5px;
-	font-size: 30px;
-	color: #000;
-	-webkit-font-smoothing:antialiased;
-}
-.redes-sociales .social ul li a .sr-text{
-	display: none;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/****Navegación Principal****/
-.menu-sitio ul{
-	display: table;
-	width: 100%;
+body {
+  background-color: #fff;
+  font-family: Open sans, sans-serif;
 }
-.menu-sitio ul li a{
-	text-align: center;
-	padding: 20px 0;
-	display: block;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #000;
+
+.encabezado-sitio {
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 30px;
 }
-.menu-sitio ul li.current_page_item a{
-	border-bottom: 8px solid #a61206;
+@media only screen and (min-width: 768px) {
+  .encabezado-sitio .contenedor {
+    position: relative;
+  }
+  .encabezado-sitio .informacion-encabezado {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
-.menu-sitio ul li:hover{
-	background-color: #f19f30;
+.encabezado-sitio .logo {
+  text-align: center;
 }
-@media only screen and (min-width: 768px){
-	.menu-sitio ul li{
-		display: table-cell;
-		width: 1%
-		text-align: center;
-	}
+@media only screen and (min-width: 768px) {
+  .encabezado-sitio .logo {
+    text-align: left;
+  }
 }
+@media only screen and (min-width: 992px) {
+  .encabezado-sitio .logo {
+    text-align: center;
+  }
+}
+.encabezado-sitio .logo .logotipo {
+  width: 250px;
+}
+@media only screen and (min-width: 768px) {
+  .encabezado-sitio .informacion-encabezado {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.encabezado-sitio .informacion-encabezado .direccion {
+  display: block;
+  clear: both;
+  padding-top: 10px;
+}
+.encabezado-sitio .informacion-encabezado .direccion p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .encabezado-sitio .informacion-encabezado .direccion p {
+    text-align: right;
+  }
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .encabezado-sitio .informacion-encabezado .redes-sociales .social ul {
+    float: right;
+  }
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li {
+  position: relative;
+  display: inline-block;
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a:before {
+  font-family: 'FontAwesome';
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  font-size: 30px;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="facebook.com"]::before {
+  content: '\f09a';
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="twitter.com"]::before {
+  content: '\f099';
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="pinterest.com"]::before {
+  content: '\f231';
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="youtube.com"]::before {
+  content: '\f16a';
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="instagram.com"]::before {
+  content: '\f16d';
+}
+.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a .sr-text {
+  display: none;
+}
+
+.menu-sitio ul {
+  display: table;
+  width: 100%;
+}
+.menu-sitio ul li:hover {
+  background-color: #f19f30;
+}
+.menu-sitio ul li.current_page_item a {
+  border-bottom: 8px solid #a61206;
+}
+.menu-sitio ul li a {
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+@media only screen and (min-width: 768px) {
+  .menu-sitio ul li {
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
