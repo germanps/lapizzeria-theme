@@ -49,7 +49,6 @@
 					'container'=>'nav', //etiqueta que lo va a contener
 					'container_class'=>'menu-sitio'//clase que va a llevar el menu
 				);
-
 				wp_nav_menu($args); //imprime el menú
 			 ?>
 		</div>

@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-
 /*
 Theme Name: La Pizzeria
 Theme URI:
@@ -43,7 +42,7 @@ body{
 
 	@media #{$media-tablet} {
 		& .contenedor{
-			position: relative;
+			position: relative; 
 		}
 		& .informacion-encabezado{
 			position: absolute;
@@ -153,7 +152,7 @@ body{
 }
 //Navegación Principal
 .menu-sitio{
-	display: none;
+	//display: none;
 	@media #{$media-tablet}{
 		&{
 			display: block;
@@ -207,4 +206,17 @@ body{
 			}
 		}
 	}
+}
+
+/***** Templates Contenido *****/
+.principal{
+	padding: 4rem;
+	background-color: $white;
+	position: relative;
+
+	@media #{$media-tablet}{
+		&{
+			margin-top: -5rem;
+		}
+	} 
 }

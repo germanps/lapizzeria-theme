@@ -2,7 +2,7 @@
 /*
 Theme Name: La Pizzeria
 Theme URI:
-Author: Germ├ín Pla
+Author: Germán Pla
 Author URI: www.germanpla.com 
 Description: Theme a medida para el sitio web Restaurante La Pizzeria
 Version: 1.0
@@ -12,176 +12,138 @@ Tags: restaurant, mobile first, responsive, pizza
 Text Domain: lapizzeria
 */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 .contenedor {
   max-width: 1100px;
   width: 100%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   background-color: #fff;
-  font-family: Open sans, sans-serif;
-}
+  font-family: Open sans, sans-serif; }
 
 .encabezado-sitio {
   border-bottom: 1px solid #c1c1c1;
-  padding-bottom: 30px;
-}
-@media only screen and (min-width: 768px) {
-  .encabezado-sitio .contenedor {
-    position: relative;
-  }
-  .encabezado-sitio .informacion-encabezado {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-.encabezado-sitio .logo {
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
+  padding-bottom: 30px; }
+  @media only screen and (min-width: 768px) {
+    .encabezado-sitio .contenedor {
+      position: relative; }
+    .encabezado-sitio .informacion-encabezado {
+      position: absolute;
+      top: 0;
+      right: 0; } }
   .encabezado-sitio .logo {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .encabezado-sitio .logo {
-    text-align: center;
-  }
-}
-.encabezado-sitio .logo .logotipo {
-  width: 250px;
-}
-@media only screen and (min-width: 768px) {
-  .encabezado-sitio .informacion-encabezado {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-.encabezado-sitio .informacion-encabezado .direccion {
-  display: block;
-  clear: both;
-  padding-top: 10px;
-}
-.encabezado-sitio .informacion-encabezado .direccion p {
-  margin: 0;
-  font-size: 14px;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .encabezado-sitio .informacion-encabezado .direccion p {
-    text-align: right;
-  }
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-}
-@media only screen and (min-width: 768px) {
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .encabezado-sitio .logo {
+        text-align: left; } }
+    @media only screen and (min-width: 992px) {
+      .encabezado-sitio .logo {
+        text-align: center; } }
+    .encabezado-sitio .logo .logotipo {
+      width: 250px; }
+  @media only screen and (min-width: 768px) {
+    .encabezado-sitio .informacion-encabezado {
+      position: absolute;
+      top: 0;
+      right: 0; } }
+  .encabezado-sitio .informacion-encabezado .direccion {
+    display: block;
+    clear: both;
+    padding-top: 10px; }
+    .encabezado-sitio .informacion-encabezado .direccion p {
+      margin: 0;
+      font-size: 14px;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .encabezado-sitio .informacion-encabezado .direccion p {
+          text-align: right; } }
   .encabezado-sitio .informacion-encabezado .redes-sociales .social ul {
-    float: right;
-  }
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li {
-  position: relative;
-  display: inline-block;
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a:before {
-  font-family: 'FontAwesome';
-  content: '';
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 5px;
-  font-size: 30px;
-  color: #000;
-  -webkit-font-smoothing: antialiased;
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="facebook.com"]::before {
-  content: '\f09a';
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="twitter.com"]::before {
-  content: '\f099';
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="pinterest.com"]::before {
-  content: '\f231';
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="youtube.com"]::before {
-  content: '\f16a';
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="instagram.com"]::before {
-  content: '\f16d';
-}
-.encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a .sr-text {
-  display: none;
-}
+    list-style: none;
+    text-align: center;
+    padding: 0; }
+    @media only screen and (min-width: 768px) {
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul {
+        float: right; } }
+    .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li {
+      position: relative;
+      display: inline-block; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a:before {
+        font-family: 'FontAwesome';
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px;
+        font-size: 30px;
+        color: #000;
+        -webkit-font-smoothing: antialiased; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="facebook.com"]::before {
+        content: '\f09a'; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="twitter.com"]::before {
+        content: '\f099'; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="pinterest.com"]::before {
+        content: '\f231'; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="youtube.com"]::before {
+        content: '\f16a'; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a[href*="instagram.com"]::before {
+        content: '\f16d'; }
+      .encabezado-sitio .informacion-encabezado .redes-sociales .social ul li a .sr-text {
+        display: none; }
 
-.menu-sitio {
-  display: none;
-}
 @media only screen and (min-width: 768px) {
   .menu-sitio {
-    display: block;
-  }
-}
+    display: block; } }
+
 .menu-sitio ul {
   display: table;
-  width: 100%;
-}
-.menu-sitio ul li:hover {
-  background-color: #f19f30;
-}
-.menu-sitio ul li.current_page_item a {
-  border-bottom: 8px solid #a61206;
-}
-.menu-sitio ul li a {
-  text-align: center;
-  padding: 20px 0;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-}
-@media only screen and (min-width: 768px) {
-  .menu-sitio ul li {
-    display: table-cell;
-    width: 1%;
+  width: 100%; }
+  .menu-sitio ul li:hover {
+    background-color: #f19f30; }
+  .menu-sitio ul li.current_page_item a {
+    border-bottom: 8px solid #a61206; }
+  .menu-sitio ul li a {
     text-align: center;
-  }
-}
+    padding: 20px 0;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000; }
+  @media only screen and (min-width: 768px) {
+    .menu-sitio ul li {
+      display: table-cell;
+      width: 1%;
+      text-align: center; } }
 
 .movil-menu a {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  .movil-menu a {
-    height: 40px;
-    background-color: #a61206;
-    width: 100%;
-    color: #fff;
-    display: block;
-    text-align: center;
-    line-height: 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-}
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .movil-menu a {
+      height: 40px;
+      background-color: #a61206;
+      width: 100%;
+      color: #fff;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 20px; } }
 
-/*# sourceMappingURL=style.css.map */
+/***** Templates Contenido *****/
+.principal {
+  padding: 4rem;
+  background-color: #fff;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .principal {
+      margin-top: -5rem; } }

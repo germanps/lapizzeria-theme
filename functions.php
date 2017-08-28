@@ -1,4 +1,12 @@
 <?php 
+
+/****** Poner la imagen destacada en el backend *****/
+function lapizzeria_setup(){
+	add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'lapizzeria_setup');
+
+
 /***** Enlace a la hoja de estilos *****/
 function lapizzeria_styles(){
 	//Registrar normalice.css

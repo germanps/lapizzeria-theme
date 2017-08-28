@@ -2,6 +2,7 @@
 (function($){
 	//Ocultar/Mostrar menú mobile
 	$('.movil').click(function(e) {
+		console.log('entra');
 		$('.menu-sitio').slideToggle(200);
 	});
 

@@ -1,0 +1,33 @@
+{
+  "name": "lapizzeria",
+  "version": "1.0.0",
+  "description": "wordpress theme",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/germanps/lapizzeria-theme.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "theme",
+    "restaurant"
+  ],
+  "author": "Germán Pla",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.0",
+    "pump": "^1.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/germanps/lapizzeria-theme/issues"
+  },
+  "homepage": "https://github.com/germanps/lapizzeria-theme#readme"
+}
