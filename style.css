@@ -10,7 +10,143 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: restaurant, mobile first, responsive, pizza
 Text Domain: lapizzeria
 */
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+.contenedor{
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
 body{
 	background-color: #fff;
 	font-family: Open sans, sans-serif;
+}
+
+/***Encabezado***/
+.encabezado-sitio{
+	border-bottom: 1px solid #c1c1c1;
+	padding-bottom: 30px;
+}
+.logo{
+	text-align: center;
+}
+.logotipo{
+	width: 250px;
+}
+@media only screen and (min-width: 768px){
+	.logo{
+		text-align: left;
+	}
+}
+@media only screen and (min-width: 992px){
+	.logo{
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 768px){
+	.encabezado-sitio .contenedor{
+		position: relative;
+	}
+	.informacion-encabezado{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+.informacion-encabezado .direccion{
+	display: block;
+	clear: both;
+	padding-top: 10px;
+}
+.informacion-encabezado .direccion p{
+	margin: 0;
+	font-size: 14px;
+	text-align: center;
+}
+@media only screen and (min-width: 768px){
+	.informacion-encabezado .direccion p{
+		text-align: right;
+	}
+}
+
+/****Menu redes sociales****/
+.redes-sociales .social ul{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+@media only screen and (min-width: 768px){
+	.redes-sociales .social ul{
+		float: right;
+	}
+}
+.redes-sociales .social ul li{
+	position: relative;
+	display: inline-block;
+}
+.redes-sociales .social ul li a[href*="facebook.com"]::before{
+	content: '\f09a';
+}
+.redes-sociales .social ul li a[href*="twitter.com"]::before{
+	content: '\f099';
+}
+.redes-sociales .social ul li a[href*="pinterest.com"]::before{
+	content: '\f231';
+}
+.redes-sociales .social ul li a[href*="youtube.com"]::before{
+	content: '\f16a';
+}
+.redes-sociales .social ul li a[href*="instagram.com"]::before{
+	content: '\f16d';
+}
+.redes-sociales .social ul li a:before{
+	font-family: 'FontAwesome';
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px;
+	font-size: 30px;
+	color: #000;
+	-webkit-font-smoothing:antialiased;
+}
+.redes-sociales .social ul li a .sr-text{
+	display: none;
+}
+
+/****Navegación Principal****/
+.menu-sitio ul{
+	display: table;
+	width: 100%;
+}
+.menu-sitio ul li a{
+	text-align: center;
+	padding: 20px 0;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+.menu-sitio ul li.current_page_item a{
+	border-bottom: 8px solid #a61206;
+}
+.menu-sitio ul li:hover{
+	background-color: #f19f30;
+}
+@media only screen and (min-width: 768px){
+	.menu-sitio ul li{
+		display: table-cell;
+		width: 1%
+		text-align: center;
+	}
 }
