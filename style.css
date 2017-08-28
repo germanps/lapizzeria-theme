@@ -27,6 +27,9 @@ ul {
   padding: 0;
   margin: 0; }
 
+.texto-centrado {
+  text-align: center; }
+
 body {
   background-color: #fff;
   font-family: Open sans, sans-serif; }
@@ -140,10 +143,31 @@ body {
       font-size: 20px; } }
 
 /***** Templates Contenido *****/
+.hero {
+  background-color: #000;
+  height: 450px;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+  position: relative; }
+  .hero .contenido-hero {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    position: relative;
+    width: 100vw; }
+    @media only screen and (min-width: 768px) {
+      .hero .contenido-hero .texto-hero {
+        width: 80%;
+        margin: 0 auto; } }
+
 .principal {
   padding: 4rem;
   background-color: #fff;
   position: relative; }
   @media only screen and (min-width: 768px) {
     .principal {
-      margin-top: -5rem; } }
+      margin-top: -90px; } }
+  .principal .contenido-paginas {
+    font-size: 18px;
+    line-height: 3; }
