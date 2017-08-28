@@ -213,12 +213,25 @@ body{
 
 /***** Templates Contenido *****/
 .hero{
-	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 	height: 450px;
 	text-align: center;
 	margin: 0 auto;
 	display: table;
 	position: relative;
+
+
+	&:after{
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.6);
+		top: 0;
+		left: 0;
+	}
 
 	.contenido-hero{
 		display: table-cell;
@@ -226,6 +239,7 @@ body{
 		color: $white;
 		position: relative;
 		width: 100vw;
+		z-index: 2;
 
 		.texto-hero{
 			@media #{$media-tablet}{

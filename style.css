@@ -144,18 +144,29 @@ body {
 
 /***** Templates Contenido *****/
 .hero {
-  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 450px;
   text-align: center;
   margin: 0 auto;
   display: table;
   position: relative; }
+  .hero:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0; }
   .hero .contenido-hero {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
     position: relative;
-    width: 100vw; }
+    width: 100vw;
+    z-index: 2; }
     @media only screen and (min-width: 768px) {
       .hero .contenido-hero .texto-hero {
         width: 80%;
