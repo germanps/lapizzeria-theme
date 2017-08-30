@@ -50,6 +50,9 @@ h3 {
 h4 {
   font-size: 24px; }
 
+a {
+  text-decoration: none; }
+
 .encabezado-sitio {
   border-bottom: 1px solid #c1c1c1;
   padding-bottom: 30px; }
@@ -198,3 +201,28 @@ h4 {
   .principal .contenido-paginas {
     font-size: 18px;
     line-height: 3; }
+
+/*********** Footer ***********/
+footer {
+  margin-top: 30px;
+  padding: 50px 0;
+  border-top: 1px solid #c1c1c1;
+  text-align: center; }
+  footer nav ul li {
+    display: inline; }
+    footer nav ul li a {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px; }
+    footer nav ul li:last-child .separador {
+      display: none; }
+  footer .ubicacion {
+    margin-top: 30px; }
+  footer p {
+    margin: 0 0 5px 0;
+    font-size: 14px; }
+  footer .copy {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold; }

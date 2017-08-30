@@ -46,7 +46,9 @@ h1, h2, h3, h4, h5, h6{
 		font-size: $onepx*48 - $i*6;
 	}
 }
-
+a{
+	text-decoration: none;
+}
 
 //Encabezado
 .encabezado-sitio{
@@ -276,5 +278,40 @@ h1, h2, h3, h4, h5, h6{
 	.contenido-paginas{
 		font-size: 18px;
 		line-height: 3;
+	}
+}
+
+/*********** Footer ***********/
+footer{
+	margin-top: 30px;
+	padding: 50px 0;
+	border-top: 1px solid $silver;
+	text-align: center;
+
+	nav ul li{
+		display: inline;
+
+		a{
+			color: $black;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		&:last-child .separador{
+			display: none;
+		}
+	}
+	.ubicacion{
+		margin-top: 30px;
+	}
+	p{
+		margin: 0 0 5px 0;
+		font-size: 14px;
+	}
+	.copy{
+		margin-top: 20px;
+		font-size: 12px;
+		font-weight: bold;
 	}
 }
