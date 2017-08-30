@@ -35,8 +35,18 @@ ul{
 
 body{
 	background-color: $white;
-	font-family: Open sans, sans-serif;
+	font-family: $opensans;
 }
+h1, h2, h3, h4, h5, h6{
+	font-family: $raleway;
+	font-weight: 900;
+}
+@for $i from 1 through 4{
+	h#{$i}{
+		font-size: $onepx*48 - $i*6;
+	}
+}
+
 
 //Encabezado
 .encabezado-sitio{
