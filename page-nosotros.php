@@ -19,7 +19,7 @@
 			</main>
 		</div>
 
-		<div class="informacion-cajas contenedor">
+		<div class="informacion-cajas contenedor clearfix">
 			<div class="caja">
 				<?php 
 					$id_imagen = get_field('imagen_1');//id imagen

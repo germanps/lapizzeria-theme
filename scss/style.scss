@@ -19,6 +19,12 @@ html{
 *, *:before, *:after{
 	box-sizing: inherit;
 }
+.clearfix,
+.clearfix::after{
+	clear:both;
+	content:'';
+	display:block;
+}
 .contenedor{
 	max-width: 1100px;
 	width: 100%;
@@ -315,3 +321,55 @@ footer{
 		font-weight: bold;
 	}
 }
+
+/****** Nosotros ******/
+.informacion-cajas{
+	img{
+		width: 100%;
+	}
+	& > div{
+		text-align: center;
+		width: 100%;
+		color: $white;
+
+		&:last-child{
+			width: 100%; 
+		}
+		@media #{$media-mobile}{
+			&{
+				width: 50%;
+				float: left;
+			}
+		}
+		@media #{$media-tablet}{
+			&,
+			&:last-child{
+				width: 33.3%;
+			}
+		}
+		&:nth-child(1){
+			background-color: $fuelYellow;
+		}
+		&:nth-child(2){
+			background-color: $jewel;
+		}
+		&:nth-child(3){
+			background-color: $totemPole;
+		}
+		.contenido-caja{
+			padding: 20px 5px 5px 5px;
+
+			@media #{$media-tablet}{
+				&{
+					padding: 50px 0;
+				}
+			}
+
+			h3{
+				font-weight: 700;
+				text-transform:uppercase;
+				font-size: 24px;
+			}
+		}
+	}
+} 
