@@ -54,6 +54,7 @@ a{
 .encabezado-sitio{
 	border-bottom: 1px solid $silver;
 	padding-bottom: 30px;
+	padding-top: 30px;
 
 	@media #{$media-tablet} {
 		& .contenedor{
@@ -233,7 +234,6 @@ a{
 	margin: 0 auto;
 	display: table;
 	position: relative;
-
 
 	&:after{
 		position: absolute;

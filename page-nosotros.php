@@ -19,7 +19,26 @@
 			</main>
 		</div>
 
-		<h2>Las cajas irán aqui</h2>
+		<div class="informacion-cajas contenedor">
+			<div class="caja">
+				<img src="<?php the_field('imagen_1'); ?>" alt="">
+				<div class="contenido-caja">
+					<?php the_field('descripcion_1'); ?>
+				</div>
+			</div>
+			<div class="caja">
+				<img src="<?php the_field('imagen_2'); ?>" alt="">
+				<div class="contenido-caja">
+					<?php the_field('descripcion_2'); ?>
+				</div>
+			</div>
+			<div class="caja">
+				<img src="<?php the_field('imagen_3'); ?>" alt="">
+				<div class="contenido-caja">
+					<?php the_field('descripcion_3'); ?>
+				</div>
+			</div>
+		</div>
 
 	<?php endwhile; ?>
 
