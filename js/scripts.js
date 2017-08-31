@@ -14,6 +14,22 @@
 		}else{
 			$('.menu-sitio').hide();
 		}
+
+		ajustarCajasCuadricula();
 	});
 
+	//tamaño de cajas cuadricula sobre-nosotros
+	function ajustarCajasCuadricula(){
+		var imagenes = $('.imagen-caja');
+		if (imagenes.length > 0) {
+			var altura = imagenes[0].height;
+			var cajas = $('.contenido-caja');
+			$(cajas).each(function(index, el) {
+				$(el).css('height', altura + 'px');
+			});
+		}
+	}
+	ajustarCajasCuadricula();
+
 })(jQuery);
+
