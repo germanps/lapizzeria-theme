@@ -1,10 +1,15 @@
 <?php 
 
-/****** Poner la imagen destacada en el backend *****/
+/****** SETUP *****/
 function lapizzeria_setup(){
+	/* Poner la imagen destacada en el backend */
 	add_theme_support('post-thumbnails');
+	/* Tamaño de imagenes (con true cortamos la imagen*/
+	add_image_size('nosotros', 437, 291, true);
+
 }
 add_action('after_setup_theme', 'lapizzeria_setup');
+
 
 
 /***** Enlace a la hoja de estilos *****/
