@@ -394,3 +394,38 @@ footer{
 		}
 	}
 } 
+
+/****** ESPECIALIDADES ******/
+.nuestras-especialidades{
+	padding: 0 4.5rem;
+	.especialidades-titulo{
+		color: $totemPole; 
+	}
+	.contenedor-grid{
+		.contenido-especialidad{
+			.texto-especialidad{
+				padding: 1.5rem;
+				h4{
+					border-bottom: 1px solid $silver;
+					padding-bottom: 1rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin: 0;
+					display: flex;
+					justify-content: space-between;
+
+					span{
+						color: $fuelYellow;
+						font-size: 30px;
+						font-family: $opensans;
+					}
+				}
+
+				p{
+					color: $mineshaft;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}

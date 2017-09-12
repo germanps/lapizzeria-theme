@@ -28,7 +28,7 @@ get_header() ?>
 	<?php endwhile; ?>
 
 	<div class="nuestras-especialidades contenedor">
-		<h3 class="">Pizzas</h3>
+		<h3 class="especialidades-titulo">Pizzas</h3>
 		<div class="contenedor-grid">
 
 			<?php 
@@ -45,9 +45,10 @@ get_header() ?>
 				while($pizzas->have_posts()): $pizzas->the_post();
 			?>
 
-			<div class="">
+			<div class="contenido-especialidad">
 				<?php the_post_thumbnail('especialidades'); ?>
-				<div class="text-especialidad">
+
+				<div class="texto-especialidad">
 					<h4><?php the_title(); ?> <span><?php the_field('precio'); ?></span></h4>
 					<?php the_content(); ?>
 				</div>
