@@ -27,4 +27,28 @@ get_header() ?>
 
 	<?php endwhile; ?>
 
+	<div class="nuestras-especialidades contenedor">
+		<h3 class="">Pizzas</h3>
+		<?php 
+			//WP_QUERY
+			$args = array(
+				'post_type' => 'especialidades',
+				'post_per_page' => -1,
+				'order_by' => 'title',
+				'order' => 'ASC',
+				'category_name' => 'pizzas'
+			);
+
+			$pizzas = new WP_Query($args);
+			while($pizzas->have_posts()): $pizzas->the_post();
+		?>
+
+		<ul>
+			<li><?php the_title(); ?></li>
+		</ul>
+		
+		<?php endwhile; wp_reset_postdata(); ?>
+
+	</div>
+
 <?php get_footer() ?>
