@@ -45,7 +45,7 @@ get_header() ?>
 				while($pizzas->have_posts()): $pizzas->the_post();
 			?>
 
-			<div class="contenido-especialidad">
+			<div class="col-grid-2-4">
 				<?php the_post_thumbnail('especialidades'); ?>
 
 				<div class="texto-especialidad">
