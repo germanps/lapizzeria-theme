@@ -6,6 +6,8 @@ function lapizzeria_setup(){
 	add_theme_support('post-thumbnails');
 	/* Tamaño de imagenes (con true cortamos la imagen*/
 	add_image_size('nosotros', 437, 291, true);
+	/* Tamaño de imagenes ESPECIALIDADES (con true cortamos la imagen*/
+	add_image_size('especialidades', 768, 515, true);
 
 }
 add_action('after_setup_theme', 'lapizzeria_setup');
