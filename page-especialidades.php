@@ -3,8 +3,6 @@
 * Template Name: Especialidades
 */
 get_header() ?>
-
-<h1>Especialidades</h1>
 	
 	<?php while(have_posts()): the_post();  ?>
 
@@ -28,6 +26,7 @@ get_header() ?>
 	<?php endwhile; ?>
 
 	<div class="nuestras-especialidades contenedor">
+		<!-- Pizzas -->
 		<h3 class="especialidades-titulo">Pizzas</h3>
 		<div class="contenedor-grid">
 
@@ -52,13 +51,45 @@ get_header() ?>
 					<h4><?php the_title(); ?> <span><?php the_field('precio'); ?></span></h4>
 					<?php the_content(); ?>
 				</div>
-			</div>
+			</div> <!-- .col-grid- -->
 
 
 			<?php endwhile; wp_reset_postdata(); ?>
 
-		</div>
+		</div> <!-- .contenedor-grid -->
 
-	</div>
+		<!-- Otros -->
+		<h3 class="especialidades-titulo">Otros</h3>
+		<div class="contenedor-grid">
+
+			<?php 
+				//WP_QUERY
+				$args = array(
+					'post_type' => 'especialidades',
+					'post_per_page' => -1,
+					'order_by' => 'title',
+					'order' => 'ASC',
+					'category_name' => 'otros'
+				);
+
+				$otros = new WP_Query($args);
+				while($otros->have_posts()): $otros->the_post();
+			?>
+
+			<div class="col-grid-2-4">
+				<?php the_post_thumbnail('especialidades'); ?>
+
+				<div class="texto-especialidad">
+					<h4><?php the_title(); ?> <span><?php the_field('precio'); ?></span></h4>
+					<?php the_content(); ?>
+				</div>
+			</div> <!-- .col-grid- -->
+
+
+			<?php endwhile; wp_reset_postdata(); ?>
+
+		</div> <!-- .contenedor-grid -->
+
+	</div> <!-- nuestras especialidades -->
 
 <?php get_footer() ?>
