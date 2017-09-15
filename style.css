@@ -161,6 +161,8 @@ a {
     background-color: #f19f30; }
   .menu-sitio ul li.current_page_item a {
     border-bottom: 8px solid #a61206; }
+  .menu-sitio ul li.current_page_parent a {
+    border-bottom: 8px solid #a61206; }
   .menu-sitio ul li a {
     text-align: center;
     padding: 20px 0;
@@ -229,7 +231,7 @@ a {
       margin-top: -90px; } }
   .principal .contenido-paginas {
     font-size: 18px;
-    line-height: 3; }
+    line-height: 2; }
 
 /*********** Footer ***********/
 footer {
@@ -444,3 +446,37 @@ footer {
         text-decoration: none; }
         .sidebar .widget ul li a:hover {
           color: #f19f30; }
+
+/*********** SINGLE ***********/
+@media only screen and (min-width: 992px) {
+  .single .comentarios {
+    width: 60%;
+    margin: auto; } }
+
+.single .comentarios h3 {
+  font-weight: 700;
+  text-align: center; }
+
+.single form label {
+  width: 200px;
+  display: inline-block; }
+
+.single form input, .single form textarea {
+  padding: 10px;
+  width: calc(100% - 205px);
+  border-radius: 0;
+  border-style: solid;
+  border-color: #d6d8d8;
+  border-width: 1px; }
+
+.single form input[type="submit"] {
+  width: 100%;
+  background-color: #a61206;
+  color: #fff;
+  border: none;
+  font-size: 20px; }
+
+.single form .logged-in-as {
+  color: #f19f30; }
+  .single form .logged-in-as a {
+    color: #f19f30; }

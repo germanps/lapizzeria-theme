@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="principal contenedor single">
-			<main class="texto-centrado contenido-paginas">
+			<main class="contenido-paginas">
 				<?php the_content(); ?>
 			</main>
 
@@ -21,8 +21,6 @@
 			</div>
 
 		</div>
-
-		
 
 	<?php endwhile; ?>
 
