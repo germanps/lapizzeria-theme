@@ -99,4 +99,23 @@ function lapizzeria_especialidades() {
 /***************************** Fin Custom PostTypes ***************************/
 /******************************************************************************/
 
+
+/*********** WIDGETS ***********/
+
+function lapizzeria_widgets(){
+
+		$args = array(
+			'name'          => 'Blog Sidebar',
+			'id'            => 'blog_sidebar',
+			'before_widget' => '<div class="widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widgettitle">',
+			'after_title'   => '</h3>'
+		);
+	
+		register_sidebar( $args );
+	
+}
+add_action('widgets_init', 'lapizzeria_widgets');
+
  ?>
