@@ -457,15 +457,15 @@ footer {
   font-weight: 700;
   text-align: center; }
 
-.single form p:not(:first-child) {
+.single .comentarios form p:not(:first-child) {
   display: flex; }
 
-.single form label {
+.single .comentarios form label {
   width: 200px;
   display: flex;
   align-self: center; }
 
-.single form input, .single form textarea {
+.single .comentarios form input, .single .comentarios form textarea {
   padding: 10px;
   width: calc(100% - 205px);
   border-radius: 0;
@@ -473,7 +473,7 @@ footer {
   border-color: #d6d8d8;
   border-width: 1px; }
 
-.single form input[type="submit"] {
+.single .comentarios form input[type="submit"] {
   width: 100%;
   background-color: #a61206;
   color: #fff;
@@ -481,7 +481,10 @@ footer {
   font-size: 20px;
   cursor: pointer; }
 
-.single form .logged-in-as {
+.single .comentarios form .logged-in-as {
   color: #f19f30; }
-  .single form .logged-in-as a {
+  .single .comentarios form .logged-in-as a {
     color: #f19f30; }
+
+.single .comentarios-wrapper .lista-comentarios img {
+  width: initial; }
