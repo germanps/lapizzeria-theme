@@ -402,3 +402,42 @@ footer {
 .entrada-blog .contenido-entrada p {
   margin-bottom: 0;
   line-height: 24px; }
+
+/*********** SIDEBAR ***********/
+.sidebar {
+  margin-top: .3rem; }
+  .sidebar .widget {
+    margin-bottom: 1.5rem;
+    padding-left: .5rem; }
+    .sidebar .widget h3 {
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase; }
+    .sidebar .widget .searchform {
+      position: relative; }
+      .sidebar .widget .searchform input[type="submit"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 36px;
+        height: 36px;
+        background-color: #a61206;
+        text-indent: -9999px;
+        background-image: url("img/buscador.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: none;
+        cursor: pointer; }
+      .sidebar .widget .searchform input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d6d8d8; }
+      .sidebar .widget .searchform label {
+        display: none; }
+    .sidebar .widget ul li {
+      margin-bottom: 10px; }
+      .sidebar .widget ul li a {
+        color: #000;
+        text-decoration: none; }
+        .sidebar .widget ul li a:hover {
+          color: #f19f30; }

@@ -568,3 +568,61 @@ footer{
 	}
 
 }
+
+/*********** SIDEBAR ***********/
+.sidebar{
+	margin-top: .3rem; 
+	.widget{
+		margin-bottom: 1.5rem;
+		padding-left: .5rem;
+
+		h3{
+			font-weight: 700;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+
+		.searchform{
+			position: relative;
+
+			input[type="submit"]{
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 36px;
+				height: 36px;
+				background-color: $totemPole;
+				text-indent: -9999px;
+				background-image: url('img/buscador.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				border: none;
+				cursor: pointer;
+			}
+			input[type="text"]{
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #d6d8d8;
+			}
+
+			label{
+				display: none;
+			}
+		}
+
+		ul{
+			li{
+				margin-bottom: 10px;
+
+				a{
+					color: $black;
+					text-decoration: none;
+
+					&:hover{
+						color: $fuelYellow;
+					}
+				}
+			}
+		}
+	}
+}
