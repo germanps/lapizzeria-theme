@@ -656,10 +656,13 @@ footer{
 	}
 
 	form{
-
+		p:not(:first-child){
+			display: flex;
+		}
 		label{
 			width: 200px;
-			display: inline-block;
+			display: flex;
+    		align-self: center;
 		}
 
 		input, textarea{
@@ -676,6 +679,7 @@ footer{
 			color: $white;
 			border: none;
     		font-size: 20px;
+    		cursor: pointer;
 		}
 
 		.logged-in-as{

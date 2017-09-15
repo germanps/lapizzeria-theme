@@ -457,9 +457,13 @@ footer {
   font-weight: 700;
   text-align: center; }
 
+.single form p:not(:first-child) {
+  display: flex; }
+
 .single form label {
   width: 200px;
-  display: inline-block; }
+  display: flex;
+  align-self: center; }
 
 .single form input, .single form textarea {
   padding: 10px;
@@ -474,7 +478,8 @@ footer {
   background-color: #a61206;
   color: #fff;
   border: none;
-  font-size: 20px; }
+  font-size: 20px;
+  cursor: pointer; }
 
 .single form .logged-in-as {
   color: #f19f30; }
