@@ -497,6 +497,12 @@ footer{
 }
 
 .entrada-blog{
+	border-bottom: 1px solid $fuelYellow;
+    padding-bottom: 1rem;
+
+    &:last-child{
+    	border-bottom: none;
+    }
 
 	img{
 		margin-top: 2rem;
@@ -504,6 +510,7 @@ footer{
 
 	.informacion-entrada{
 		margin-top: 1.5rem;
+		//border-bottom: 1px solid $fuelYellow;
 
 		.fecha{
 			background-color: $fuelYellow;
