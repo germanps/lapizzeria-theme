@@ -41,6 +41,23 @@ ul {
 .texto-centrado {
   text-align: center; }
 
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  width: auto;
+  boder-radius: 0;
+  color: #fff;
+  padding: 15px 80px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all .2s ease; }
+
+.button.rojo {
+  background-color: #a61206; }
+  .button.rojo:hover {
+    background-color: #f19f30; }
+
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif; }
@@ -329,3 +346,59 @@ footer {
     width: 33.33%; }
   .contenedor-grid .col-grid-2-3 {
     width: 66.66%; } }
+
+/****** BLOG ******/
+.blog.contenido-paginas {
+  line-height: initial; }
+
+.entrada-blog img {
+  margin-top: 2rem; }
+
+.entrada-blog .informacion-entrada {
+  margin-top: 1.5rem; }
+  .entrada-blog .informacion-entrada .fecha {
+    background-color: #f19f30;
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+    margin-right: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    .entrada-blog .informacion-entrada .fecha time {
+      font-size: 30px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center; }
+      .entrada-blog .informacion-entrada .fecha time span {
+        font-size: 16px;
+        display: block;
+        clear: both;
+        text-transform: uppercase; }
+  .entrada-blog .informacion-entrada .titulo-entrada {
+    float: right;
+    width: calc(100% - 95px); }
+    .entrada-blog .informacion-entrada .titulo-entrada h2 {
+      margin: 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .entrada-blog .informacion-entrada .titulo-entrada .autor {
+      text-transform: uppercase;
+      color: #3d3d3d;
+      margin-top: .8rem;
+      font-family: "Raleway", sans-serif; }
+      .entrada-blog .informacion-entrada .titulo-entrada .autor i {
+        font-size: 30px;
+        color: #f19f30; }
+      .entrada-blog .informacion-entrada .titulo-entrada .autor span {
+        font-size: 14px;
+        font-weight: bold; }
+
+.entrada-blog .contenido-entrada p {
+  margin-bottom: 0;
+  line-height: 24px; }

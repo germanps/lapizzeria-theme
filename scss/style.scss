@@ -43,6 +43,25 @@ ul{
 .texto-centrado{
 	text-align: center;
 }
+.button{
+	font-family: $opensans;
+	font-size: 16px;
+	width: auto;
+	boder-radius: 0;
+	color: $white;
+	padding: 15px 80px;
+	margin-top: 20px;
+	display: inline-block; 
+	text-decoration: none;
+	transition: all .2s ease;
+}
+.button.rojo{
+	background-color: $totemPole;
+
+	&:hover{
+		background-color: $fuelYellow;
+	}
+}
 
 body{
 	background-color: $white;
@@ -77,7 +96,7 @@ a{
 			right: 0;
 		}
 	}
-	
+	  
 
 	.logo{
 		text-align: center;
@@ -469,4 +488,83 @@ footer{
 			width: 66.66%;
 		}
 	}
+}
+
+
+/****** BLOG ******/
+.blog.contenido-paginas{
+	line-height: initial;
+}
+
+.entrada-blog{
+
+	img{
+		margin-top: 2rem;
+	}
+
+	.informacion-entrada{
+		margin-top: 1.5rem;
+
+		.fecha{
+			background-color: $fuelYellow;
+			float: left;
+			width: 70px;
+			height: 70px;
+			padding-top: 5px;
+			margin-right: 1.5rem;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+
+			time{
+				font-size: 30px;
+				font-family: $raleway;
+				font-weight: 700;
+				display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-self: center;
+
+				span{
+					font-size: 16px;
+					display: block;
+					clear: both;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.titulo-entrada{
+			float: right;
+			width: calc(100% - 95px);
+
+			h2{
+				margin: 0;
+				font-size: 24px;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+			.autor{
+				text-transform: uppercase;
+				color: $mineshaft;
+				margin-top: .8rem;
+				font-family: $raleway;
+
+				i{
+					font-size: 30px;
+					color: $fuelYellow;
+				}
+				span{
+					font-size: 14px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.contenido-entrada{
+		p{
+			margin-bottom: 0;
+			line-height: 24px;
+		}
+	}
+
 }

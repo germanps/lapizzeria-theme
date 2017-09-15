@@ -19,36 +19,37 @@
 		
 		<!-- Entradas del Blog -->
 		<div class="principal contenedor">
-			<main class="texto-centrado contenido-paginas">
-				<?php while(have_posts()): the_post();  ?>
-					<article>
-						<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail('especialidades'); ?>
-						</a>
-						<header class="informacion-entrada clearfix">
-							<div class="fecha">
-								<time>
-									<?php echo the_time('d'); ?>
-									<span><?php the_time('M'); ?></span>
-								</time>
-							</div>
-							<div class="titulo-entrada">
-								<?php the_title('<h2>', '</h2>' ); ?>
-								<p class="autor">
-									<i class="fa fa-user" aria-hidden="true">
-										<?php the_author(); ?>
-									</i>
-								</p>
-							</div>
-						</header>
-						<section class="contenido-entrada">
-							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>" class="button rojo">Leer más...</a>
-						</section>
-					</article>
-				<?php endwhile; ?>
-			</main>
-		</div>
+			<div class="contenedor-grid">
+				<main class="blog contenido-paginas col-grid-2-3">
+					<?php while(have_posts()): the_post();  ?>
+						<article class="entrada-blog">
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail('especialidades'); ?>
+							</a>
+							<header class="informacion-entrada clearfix">
+								<div class="fecha">
+									<time>
+										<?php echo the_time('d'); ?>
+										<span><?php the_time('M'); ?></span>
+									</time>
+								</div>
+								<div class="titulo-entrada">
+									<?php the_title('<h2>', '</h2>' ); ?>
+									<p class="autor">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<span><?php the_author(); ?></span>
+									</p>
+								</div>
+							</header>
+							<section class="contenido-entrada">
+								<?php the_excerpt(); ?>
+								<a href="<?php the_permalink(); ?>" class="button rojo">Leer más...</a>
+							</section>
+						</article>
+					<?php endwhile; ?>
+				</main>
+			</div> <!-- .contenedor-grid -->
+		</div> <!-- .principal -->
 
 	
 
