@@ -486,5 +486,27 @@ footer {
   .single .comentarios form .logged-in-as a {
     color: #f19f30; }
 
-.single .comentarios-wrapper .lista-comentarios img {
-  width: initial; }
+.single .comentarios-wrapper .lista-comentarios {
+  margin-top: 4rem; }
+  .single .comentarios-wrapper .lista-comentarios .comment {
+    background-color: #D6D8D8;
+    padding: 20px;
+    margin-bottom: 20px; }
+    .single .comentarios-wrapper .lista-comentarios .comment cite {
+      color: #a61206;
+      font-size: 20px;
+      font-weight: bold; }
+      .single .comentarios-wrapper .lista-comentarios .comment cite a {
+        color: #a61206;
+        font-size: 20px;
+        font-weight: bold; }
+    .single .comentarios-wrapper .lista-comentarios .comment img {
+      width: initial; }
+    .single .comentarios-wrapper .lista-comentarios .comment a {
+      color: #a61206;
+      text-decoration: none; }
+    .single .comentarios-wrapper .lista-comentarios .comment .children li {
+      background-color: #fff;
+      margin-top: 20px; }
+  .single .comentarios-wrapper .lista-comentarios .comment-author {
+    margin-bottom: 20px; }
