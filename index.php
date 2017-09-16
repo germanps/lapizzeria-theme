@@ -47,6 +47,9 @@
 							</section>
 						</article>
 					<?php endwhile; ?>
+					<div class="paginador">
+						<?php echo paginate_links();; ?>
+					</div>
 				</main>
 				<?php get_sidebar(); ?>
 			</div> <!-- .contenedor-grid -->

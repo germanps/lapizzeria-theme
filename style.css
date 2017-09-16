@@ -408,6 +408,26 @@ footer {
     margin-bottom: 0;
     line-height: 24px; }
 
+/******* Paginador Blog *******/
+.blog .paginador {
+  margin-top: 2rem;
+  background-color: #D6D8D8;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .blog .paginador a {
+    color: #a61206;
+    text-decoration: none;
+    padding: 0 .5rem; }
+    .blog .paginador a .current {
+      font-weight: bold;
+      color: #3d3d3d; }
+    .blog .paginador a:hover {
+      text-decoration: underline; }
+  .blog .paginador span {
+    padding: 0 .5rem; }
+
 /*********** SIDEBAR ***********/
 .sidebar {
   margin-top: .3rem; }
