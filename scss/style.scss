@@ -768,3 +768,32 @@ footer{
 		}
 	}
 }
+
+/*********** Galeria ***********/
+div#gallery-1{
+
+	.gallery-item{
+		width: 100%;
+		margin: 0;
+
+		@media #{$media-tablet}{
+			&{
+				width: 50%;
+			}
+		}
+
+		@media #{$media-desktop}{
+			&{
+				width: 25%;
+			}
+		}
+		
+		.gallery-icon{
+			padding: 0 5px;
+
+			img{
+				border: none;
+			}
+		}
+	}
+}

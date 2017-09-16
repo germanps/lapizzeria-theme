@@ -530,3 +530,18 @@ footer {
       margin-top: 20px; }
   .single .comentarios-wrapper .lista-comentarios .comment-author {
     margin-bottom: 20px; }
+
+/*********** Galeria ***********/
+div#gallery-1 .gallery-item {
+  width: 100%;
+  margin: 0; }
+  @media only screen and (min-width: 768px) {
+    div#gallery-1 .gallery-item {
+      width: 50%; } }
+  @media only screen and (min-width: 992px) {
+    div#gallery-1 .gallery-item {
+      width: 25%; } }
+  div#gallery-1 .gallery-item .gallery-icon {
+    padding: 0 5px; }
+    div#gallery-1 .gallery-item .gallery-icon img {
+      border: none; }
