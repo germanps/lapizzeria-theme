@@ -31,5 +31,14 @@
 	}
 	ajustarCajasCuadricula();
 
+	// Fluidbox (Galeria)
+	$('.gallery a').each(function(index, el) {
+		$(this).attr({'data-fluidbox' : ''});
+	});
+
+	if ($('[data-fluidbox').length > 0) {
+		$('[data-fluidbox').fluidbox();
+	}
+
 })(jQuery);
 
