@@ -797,3 +797,54 @@ div#gallery-1{
 		}
 	}
 }
+
+/*********** Contacto ***********/
+.contacto{
+	background-image: url(img/contacto_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+
+	.reserva-contacto{
+		
+		@media #{$media-tablet}{
+			&{
+				margin-left: 50%;
+			}
+		}
+		
+		h2{
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		.campo{
+			margin-bottom: 20px;
+			width: 100%;
+
+			input, textarea{
+				width: 100%;
+				border: 3px solid $iron;
+				padding: 12px 10px;
+
+				&:focus{
+					outline: none;
+					border-color: $totemPole;
+				}
+			}
+			textarea{
+				height: 200px;
+			}
+			input[type="submit"]{
+				background-color: $totemPole;
+				color: $white;
+				border: none;
+				transition: .2s all ease;
+				cursor: pointer;
+
+				&:hover{
+					background-color: $fuelYellow;
+				}
+			}
+		}
+	}
+}

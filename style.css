@@ -545,3 +545,35 @@ div#gallery-1 .gallery-item {
     padding: 0 5px; }
     div#gallery-1 .gallery-item .gallery-icon img {
       border: none; }
+
+/*********** Contacto ***********/
+.contacto {
+  background-image: url(img/contacto_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top left; }
+  @media only screen and (min-width: 768px) {
+    .contacto .reserva-contacto {
+      margin-left: 50%; } }
+  .contacto .reserva-contacto h2 {
+    font-size: 20px;
+    font-weight: 700; }
+  .contacto .reserva-contacto .campo {
+    margin-bottom: 20px;
+    width: 100%; }
+    .contacto .reserva-contacto .campo input, .contacto .reserva-contacto .campo textarea {
+      width: 100%;
+      border: 3px solid #D6D8D8;
+      padding: 12px 10px; }
+      .contacto .reserva-contacto .campo input:focus, .contacto .reserva-contacto .campo textarea:focus {
+        outline: none;
+        border-color: #a61206; }
+    .contacto .reserva-contacto .campo textarea {
+      height: 200px; }
+    .contacto .reserva-contacto .campo input[type="submit"] {
+      background-color: #a61206;
+      color: #fff;
+      border: none;
+      transition: .2s all ease;
+      cursor: pointer; }
+      .contacto .reserva-contacto .campo input[type="submit"]:hover {
+        background-color: #f19f30; }
