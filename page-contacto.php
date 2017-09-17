@@ -35,8 +35,9 @@
 						<textarea name="mensaje" placeholder="Mensaje" required></textarea>
 					</div>
 					<div class="campo">
-						<input type="submit" name="eviar" class="button" required>
+						<input type="submit" name="enviar" class="button" required>
 					</div>
+					<input type="hidden" name="oculto" value="1">
 				</form>
 			</main>
 		</div>

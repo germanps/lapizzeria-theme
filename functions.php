@@ -1,6 +1,8 @@
 <?php 
-//Llamamos al archivo datebase.php
+//Llamamos al archivo database.php
 require get_template_directory() . '/includes/database.php';
+//Llamamos al archivo de reservas.php
+require get_template_directory() . '/includes/reservas.php';
 
 /****** SETUP *****/
 function lapizzeria_setup(){
