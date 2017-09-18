@@ -35,6 +35,11 @@ function lapizzeria_guardar_datos() {
 
 		//Insert
 		$wpdb->insert($tabla, $datos, $formato);
+
+		//Redirecionamos a la página de agradecimientos
+		$url = get_page_by_title('Gracias por su reserva');
+		wp_redirect( get_permalink( $url->ID ) );
+		exit();
 		
 	endif;
 
