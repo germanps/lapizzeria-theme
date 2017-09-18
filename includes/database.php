@@ -19,7 +19,7 @@ function lapizzeria_database(){
 		id mediumint(9) NOT NULL AUTO_INCREMENT,
 		nombre varchar(50) NOT NULL,
 		fecha datetime NOT NULL,
-		correo varchar(50) DEFAULT '' NOT NULL,
+		email varchar(50) DEFAULT '' NOT NULL,
 		telefono varchar(10) NOT NULL,
 		mensaje longtext NOT NULL,
 		PRIMARY KEY (id)
@@ -45,7 +45,7 @@ function lapizzeria_database(){
 			id mediumint(9) NOT NULL AUTO_INCREMENT,
 			nombre varchar(50) NOT NULL,
 			fecha datetime NOT NULL,
-			correo varchar(50) DEFAULT '' NOT NULL,
+			email varchar(50) DEFAULT '' NOT NULL,
 			telefono varchar(10) NOT NULL,
 			/*telefono2 varchar(10) NOT NULL,*/
 			mensaje longtext NOT NULL,
