@@ -371,20 +371,23 @@ footer {
       margin-right: 1.5rem;
       text-align: center;
       display: flex;
-      justify-content: center; }
+      justify-content: space-between;
+      flex-direction: column; }
       .entrada-blog .informacion-entrada .fecha time {
         font-size: 30px;
         font-family: "Raleway", sans-serif;
         font-weight: 700;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+      .entrada-blog .informacion-entrada .fecha span {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        align-self: center; }
-        .entrada-blog .informacion-entrada .fecha time span {
-          font-size: 16px;
-          display: block;
-          clear: both;
-          text-transform: uppercase; }
+        clear: both;
+        text-transform: uppercase;
+        font-weight: 700; }
     .entrada-blog .informacion-entrada .titulo-entrada {
       float: right;
       width: calc(100% - 95px); }
@@ -392,11 +395,12 @@ footer {
         margin: 0;
         font-size: 24px;
         text-transform: uppercase;
-        font-weight: 700; }
+        font-weight: 700;
+        line-height: 1; }
       .entrada-blog .informacion-entrada .titulo-entrada .autor {
         text-transform: uppercase;
         color: #3d3d3d;
-        margin-top: .8rem;
+        margin-top: 1rem;
         font-family: "Raleway", sans-serif; }
         .entrada-blog .informacion-entrada .titulo-entrada .autor i {
           font-size: 30px;
@@ -409,23 +413,23 @@ footer {
     line-height: 24px; }
 
 /******* Paginador Blog *******/
-.blog .paginador {
+.bloc .paginador {
   margin-top: 2rem;
   background-color: #D6D8D8;
   padding: 1rem;
   display: flex;
   justify-content: center;
   width: 100%; }
-  .blog .paginador a {
+  .bloc .paginador a {
     color: #a61206;
     text-decoration: none;
     padding: 0 .5rem; }
-    .blog .paginador a .current {
+    .bloc .paginador a .current {
       font-weight: bold;
       color: #3d3d3d; }
-    .blog .paginador a:hover {
+    .bloc .paginador a:hover {
       text-decoration: underline; }
-  .blog .paginador span {
+  .bloc .paginador span {
     padding: 0 .5rem; }
 
 /*********** SIDEBAR ***********/

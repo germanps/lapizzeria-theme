@@ -6,14 +6,17 @@
 		<div class="hero" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
 			<div class="contenido-hero">
 				<div class="texto-hero">
-					<?php the_title('<h1>', '</h1>') ?>
+					<h1><?php echo esc_html(get_option( 'blogdescription')); ?></h1>
+					<?php the_content(); ?>
+					<?php $url = get_page_by_title('Sobre Nosotros'); ?>
+					<a class="button" href="<?php echo get_permalink( $url->ID ); ?>">Leer más</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="principal contenedor">
 			<main class="texto-centrado contenido-paginas">
-				<?php the_content(); ?>
+				
 			</main>
 		</div>
 

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-wdth, initial-scale=1">
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 	<header class="encabezado-sitio">
 		<div class="contenedor">

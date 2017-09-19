@@ -20,7 +20,7 @@
 		<!-- Entradas del Blog -->
 		<div class="principal contenedor">
 			<div class="contenedor-grid">
-				<main class="blog contenido-paginas col-grid-2-3">
+				<main class="bloc contenido-paginas col-grid-2-3">
 					<?php while(have_posts()): the_post();  ?>
 						<article class="entrada-blog">
 							<a href="<?php the_permalink(); ?>">
@@ -30,8 +30,8 @@
 								<div class="fecha">
 									<time>
 										<?php echo the_time('d'); ?>
-										<span><?php the_time('M'); ?></span>
 									</time>
+									<span><?php the_time('M'); ?></span>
 								</div>
 								<div class="titulo-entrada">
 									<?php the_title('<h2>', '</h2>' ); ?>
