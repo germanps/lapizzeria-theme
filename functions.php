@@ -3,6 +3,8 @@
 require get_template_directory() . '/includes/database.php';
 //Llamamos al archivo de reservas.php
 require get_template_directory() . '/includes/reservas.php';
+//Crear opciones para el template options.php
+require get_template_directory() . '/includes/options.php';
 
 /****** SETUP *****/
 function lapizzeria_setup(){
