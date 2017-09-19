@@ -63,6 +63,9 @@ ul {
   .button.rojo:hover {
     background-color: #f19f30; }
 
+.texto-rojo {
+  color: #a61206; }
+
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif; }

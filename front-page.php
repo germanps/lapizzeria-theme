@@ -14,12 +14,31 @@
 			</div>
 		</div>
 
+	<?php endwhile; ?>
+
 		<div class="principal contenedor">
-			<main class="texto-centrado contenido-paginas">
-				
+			<main class="contenedor-grid">
+				<h2 class="texto-rojo">Nuestras Especialidades</h2>
+				<?php 
+					$args = array(
+						'post_per_page' => 3,
+						'orderby' => 'rand',
+						'post_type' => 'especialidades',
+						'category_name' => 'pizzas'
+					);
+
+					$especialidades = new WP_Query($args);
+					while($especialidades->have_posts()): $especialidades->the_post();
+
+				 ?>
+
+				<div class="especialidad col-grid-1-3">
+					<?php the_title() ?>
+				</div>
+
+
+				<?php endwhile; wp_reset_postdata(); ?>
 			</main>
 		</div>
-
-	<?php endwhile; ?>
 
 <?php get_footer() ?>
