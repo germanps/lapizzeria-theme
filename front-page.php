@@ -9,7 +9,7 @@
 					<h1><?php echo esc_html(get_option( 'blogdescription')); ?></h1>
 					<?php the_content(); ?>
 					<?php $url = get_page_by_title('Sobre Nosotros'); ?>
-					<a class="button" href="<?php echo get_permalink( $url->ID ); ?>">Leer más</a>
+					<a class="button naranja" href="<?php echo get_permalink( $url->ID ); ?>">Leer más</a>
 				</div>
 			</div>
 		</div>
