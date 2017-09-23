@@ -58,7 +58,7 @@
 						<?php $url = get_page_by_title('Sobre Nosotros'); ?>
 						<a class="button naranja" href="<?php echo get_permalink( $url->ID ); ?>">Leer más</a>
 					</div>
-					<div class="col-grid-2-4">
+					<div class="col-grid-2-4 imagen">
 						<img src="<?php the_field('imagen'); ?>"/>
 					</div>
 				<?php endwhile; ?>

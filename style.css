@@ -642,3 +642,23 @@ div#gallery-1 .gallery-item {
   .contenido-especialidad:hover .info-especialidad {
     top: 0;
     opacity: 1; }
+
+/********** INGREDIENTES **********/
+.ingredientes {
+  background-image: url(img/bg-ingredientes.jpg);
+  margin-top: 3rem;
+  padding: 5rem 0;
+  color: #fff; }
+  .ingredientes h3 {
+    line-height: 2;
+    font-size: 40px;
+    font-weight: 700; }
+  .ingredientes p {
+    line-height: 1.5;
+    font-size: 20px; }
+  .ingredientes .imagen {
+    padding-top: 2rem;
+    margin: 0 auto;
+    text-align: center; }
+    .ingredientes .imagen img {
+      width: 80%; }

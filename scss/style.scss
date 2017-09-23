@@ -945,3 +945,31 @@ div#gallery-1{
     }
 
 }
+
+/********** INGREDIENTES **********/
+
+.ingredientes{
+	background-image: url(img/bg-ingredientes.jpg);
+	margin-top: 3rem;
+	padding: 5rem 0;
+	color: $white;
+
+	h3{
+		line-height: 2;
+		font-size: 40px;
+		font-weight: 700;
+	}
+	p{
+		line-height: 1.5;
+		font-size: 20px;
+	}
+	.imagen{
+		padding-top: 2rem;
+		margin: 0 auto;
+		text-align: center;
+
+		img{
+			width: 80%;
+		}
+	}
+}
