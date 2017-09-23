@@ -891,3 +891,57 @@ div#gallery-1{
 		}
 	}
 }
+
+.contenido-especialidad{
+	position: relative;
+	overflow: hidden;
+
+	.info-especialidad{
+		position: absolute;
+		top: 100%;;
+		left: 0;
+		background-color: rgba(241, 159, 48, .75);
+		opacity: 0;
+		width: 100%;
+		height: 99%;
+	    color: #fff;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    transition: .3s all ease-in-out;
+
+	    p{
+	    	max-width: 95%;
+		    text-align: center;
+		    line-height: 2;
+		    margin: 0;
+		    font-weight: 700;
+	    }
+	    .precio{
+	    	font-weight: 700;
+	    	font-size: 3rem;
+	    	margin: 0;
+	    }
+	    .button{
+	    	margin-bottom: 1rem;
+   			margin-top: 0;
+			background-color: $totemPole;
+	    }
+
+	    @media #{$media-tabletDes}{
+			&{
+				position: relative;
+				opacity: 1;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	
+
+	&:hover .info-especialidad{
+    	top: 0;
+    	opacity: 1;
+    }
+
+}

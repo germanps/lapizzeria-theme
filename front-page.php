@@ -18,7 +18,7 @@
 
 		<div class="principal contenedor">
 			<main class="contenedor-grid">
-				<h2 class="texto-rojo">Nuestras Especialidades</h2>
+				<h2 class="texto-rojo texto-centrado">Nuestras Especialidades</h2>
 				<?php 
 					$args = array(
 						'post_per_page' => 3,
