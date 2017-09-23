@@ -66,4 +66,10 @@
 			</div>
 		</section>
 
+		<section class="galeria-home contenedor">
+			<h2 class="texto-rojo texto-centrado">Galería de Imágenes</h2>
+			<?php $url = get_page_by_title('Galeria'); ?>
+			<?php echo get_post_gallery($url->ID); ?>
+		</section>
+
 <?php get_footer() ?>

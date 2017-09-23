@@ -662,3 +662,7 @@ div#gallery-1 .gallery-item {
     text-align: center; }
     .ingredientes .imagen img {
       width: 80%; }
+
+/* Galeria HOME */
+.galeria-home {
+  margin-top: 4rem; }
