@@ -72,4 +72,15 @@
 			<?php echo get_post_gallery($url->ID); ?>
 		</section>
 
+		<section class="ubicacion-reservas">
+			<div class="contenedor-grid">
+				<div class="col-grid-2-4">
+					mapa
+				</div>
+				<div class="col-grid-2-4">
+					<?php get_template_part('templates/formulario', 'reservas'); ?>
+				</div>
+			</div>
+		</section>
+
 <?php get_footer() ?>
