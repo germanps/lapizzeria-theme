@@ -816,51 +816,51 @@ div#gallery-1{
 	background-image: url(img/contacto_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: top left;
-
-	.reserva-contacto{
-		
-		@media #{$media-tablet}{
-			&{
-				margin-left: 50%;
-			}
+}
+.reserva-contacto{
+	
+	@media #{$media-tablet}{
+		&{
+			margin-left: 50%;
 		}
-		
-		h2{
-			font-size: 20px;
-			font-weight: 700;
-		}
+	}
+	
+	h2{
+		font-size: 20px;
+		font-weight: 700;
+	}
 
-		.campo{
-			margin-bottom: 20px;
+	.campo{
+		margin-bottom: 20px;
+		width: 100%;
+
+		input, textarea{
 			width: 100%;
+			border: 3px solid $iron;
+			padding: 12px 10px;
 
-			input, textarea{
-				width: 100%;
-				border: 3px solid $iron;
-				padding: 12px 10px;
-
-				&:focus{
-					outline: none;
-					border-color: $totemPole;
-				}
+			&:focus{
+				outline: none;
+				border-color: $totemPole;
 			}
-			textarea{
-				height: 200px;
-			}
-			input[type="submit"]{
-				background-color: $totemPole;
-				color: $white;
-				border: none;
-				transition: .2s all ease;
-				cursor: pointer;
+		}
+		textarea{
+			height: 200px;
+		}
+		input[type="submit"]{
+			background-color: $totemPole;
+			color: $white;
+			border: none;
+			transition: .2s all ease;
+			cursor: pointer;
 
-				&:hover{
-					background-color: $fuelYellow;
-				}
+			&:hover{
+				background-color: $fuelYellow;
 			}
 		}
 	}
 }
+
 
 
 /************* Front-Page *************/
@@ -974,7 +974,55 @@ div#gallery-1{
 	}
 }
 
-/* Galeria HOME */
+/********** Galeria HOME **********/
 .galeria-home{
 	margin-top: 4rem;
+}
+
+
+/* UBICACIÓN Y RESERVAS HOME */
+.ubicacion-reservas{
+	background-image: url(img/bg-ingredientes.jpg);
+	margin-top: 4rem;
+}
+.home{
+
+	.reserva-contacto{
+		margin: 0;
+		padding: 2rem;
+
+		h2{
+			color: $white;
+			font-size: 34px;
+			text-align: center;
+			margin-top: 0;
+		}
+
+		input, textarea{
+			background-color: transparent;
+			border-color: $white;
+			color: $white;
+			font-size: 1.2rem;
+		}
+	}
+}
+.home .reserva-contacto ::-webkit-input-placeholder{
+	color: $white;
+	font-family: $raleway;
+	font-size: 1.2rem;
+}
+.home .reserva-contacto :-moz-placeholder{
+	color: $white;
+	font-family: $raleway;
+	font-size: 1.2rem;
+}
+.home .reserva-contacto ::-moz-placeholder{
+	color: $white;
+	font-family: $raleway;
+	font-size: 1.2rem;
+}
+.home .reserva-contacto :-ms-input-placeholder{
+	color: $white;
+	font-family: $raleway;
+	font-size: 1.2rem;
 }

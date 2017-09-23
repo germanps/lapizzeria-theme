@@ -563,32 +563,35 @@ div#gallery-1 .gallery-item {
   background-image: url(img/contacto_bg.jpg);
   background-repeat: no-repeat;
   background-position: top left; }
-  @media only screen and (min-width: 768px) {
-    .contacto .reserva-contacto {
-      margin-left: 50%; } }
-  .contacto .reserva-contacto h2 {
-    font-size: 20px;
-    font-weight: 700; }
-  .contacto .reserva-contacto .campo {
-    margin-bottom: 20px;
-    width: 100%; }
-    .contacto .reserva-contacto .campo input, .contacto .reserva-contacto .campo textarea {
-      width: 100%;
-      border: 3px solid #D6D8D8;
-      padding: 12px 10px; }
-      .contacto .reserva-contacto .campo input:focus, .contacto .reserva-contacto .campo textarea:focus {
-        outline: none;
-        border-color: #a61206; }
-    .contacto .reserva-contacto .campo textarea {
-      height: 200px; }
-    .contacto .reserva-contacto .campo input[type="submit"] {
-      background-color: #a61206;
-      color: #fff;
-      border: none;
-      transition: .2s all ease;
-      cursor: pointer; }
-      .contacto .reserva-contacto .campo input[type="submit"]:hover {
-        background-color: #f19f30; }
+
+@media only screen and (min-width: 768px) {
+  .reserva-contacto {
+    margin-left: 50%; } }
+
+.reserva-contacto h2 {
+  font-size: 20px;
+  font-weight: 700; }
+
+.reserva-contacto .campo {
+  margin-bottom: 20px;
+  width: 100%; }
+  .reserva-contacto .campo input, .reserva-contacto .campo textarea {
+    width: 100%;
+    border: 3px solid #D6D8D8;
+    padding: 12px 10px; }
+    .reserva-contacto .campo input:focus, .reserva-contacto .campo textarea:focus {
+      outline: none;
+      border-color: #a61206; }
+  .reserva-contacto .campo textarea {
+    height: 200px; }
+  .reserva-contacto .campo input[type="submit"] {
+    background-color: #a61206;
+    color: #fff;
+    border: none;
+    transition: .2s all ease;
+    cursor: pointer; }
+    .reserva-contacto .campo input[type="submit"]:hover {
+      background-color: #f19f30; }
 
 /************* Front-Page *************/
 .home .hero {
@@ -663,6 +666,45 @@ div#gallery-1 .gallery-item {
     .ingredientes .imagen img {
       width: 80%; }
 
-/* Galeria HOME */
+/********** Galeria HOME **********/
 .galeria-home {
   margin-top: 4rem; }
+
+/* UBICACIÓN Y RESERVAS HOME */
+.ubicacion-reservas {
+  background-image: url(img/bg-ingredientes.jpg);
+  margin-top: 4rem; }
+
+.home .reserva-contacto {
+  margin: 0;
+  padding: 2rem; }
+  .home .reserva-contacto h2 {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 0; }
+  .home .reserva-contacto input, .home .reserva-contacto textarea {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    font-size: 1.2rem; }
+
+.home .reserva-contacto ::-webkit-input-placeholder {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem; }
+
+.home .reserva-contacto :-moz-placeholder {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem; }
+
+.home .reserva-contacto ::-moz-placeholder {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem; }
+
+.home .reserva-contacto :-ms-input-placeholder {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem; }
