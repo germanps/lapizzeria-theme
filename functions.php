@@ -14,6 +14,10 @@ function lapizzeria_setup(){
 	add_image_size('nosotros', 437, 291, true);
 	/* Tamaño de imagenes ESPECIALIDADES (con true cortamos la imagen*/
 	add_image_size('especialidades', 768, 515, true);
+	/* Tamaño de imagenes ESPECIALIDADES del INICIO (con true cortamos la imagen*/
+	add_image_size('especialidades_portrait', 435, 526, true);
+
+	
 	/* Tamaño de imagenes por defecto => galerias de WP (fluidbox) */
 	update_option('thumbnail_size_w', 253);
 	update_option('thumbnail_size_h', 164);
